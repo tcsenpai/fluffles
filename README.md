@@ -1,5 +1,7 @@
 # Fluffles Simulator
 
+![Fluffles Simulator](./screenshot.png)
+
 ## Overview
 
 Fluffles Simulator is an evolutionary simulation that models a population of small creatures called "Fluffles" in a dynamic ecosystem. The simulation demonstrates natural selection, genetic inheritance, and emergent behaviors as Fluffles compete for resources, reproduce, and adapt to their environment.
