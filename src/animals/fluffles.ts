@@ -258,7 +258,7 @@ export class Fluffles extends Animal {
     ];
     
     // Check each adjacent position for food
-    let bestFoodPosition = null;
+    let bestFoodPosition: Position | null = null;
     let bestFoodValue = 0;
     
     for (const pos of adjacentPositions) {
@@ -309,7 +309,7 @@ export class Fluffles extends Animal {
     
     if (nearbyAnimals.length > 0) {
       // Find the closest fluffles
-      let closestFluffles = null;
+      let closestFluffles: Animal | null = null;
       let closestDistance = Infinity;
       
       for (const animal of nearbyAnimals) {
@@ -368,7 +368,7 @@ export class Fluffles extends Animal {
     
     if (potentialTargets.length > 0) {
       // Find the closest target
-      let closestTarget = null;
+      let closestTarget: Animal | null = null;
       let closestDistance = Infinity;
       
       for (const animal of potentialTargets) {

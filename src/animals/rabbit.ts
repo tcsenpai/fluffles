@@ -181,9 +181,10 @@ export class Rabbit extends Animal {
   private seekCompany(): void {
     const nearbyAnimals = this.world.getAnimalsInRadius(this.position, 3);
     
+    let closestRabbit: Animal | null = null;
+    
     if (nearbyAnimals.length > 0) {
       // Find the closest rabbit
-      let closestRabbit = null;
       let closestDistance = Infinity;
       
       for (const animal of nearbyAnimals) {
@@ -213,6 +214,8 @@ export class Rabbit extends Animal {
   // New method to search for potential mates
   private searchForMates(): void {
     const nearbyAnimals = this.world.getAnimalsInRadius(this.position, 2);
+    
+    let closestRabbit: Animal | null = null;
     
     for (const animal of nearbyAnimals) {
       if (animal.getId() !== this.id) { // Not self
