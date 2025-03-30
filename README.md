@@ -38,6 +38,7 @@ Fluffles have various genetic traits that influence their behavior and survival:
 - **H**: Toggle help screen
 - **+/-**: Increase/decrease simulation speed
 - **Q** or **Esc**: Quit the simulation
+- **P**: Pause/Unpause the simulation
 
 ## Visual Indicators
 
